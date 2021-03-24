@@ -1,0 +1,33 @@
+.mainBlock{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    
+    
+
+}
+.mainBlock__wrapper{
+    padding: 10px;
+} 
+.mainBlock__input{
+    margin:5px 0 10px;
+}
+.mainBlock__input:nth-child(n+3){
+    border: 1px solid rgb(230, 101, 230);
+}
+.mainBlock__text{
+    padding: 5px;
+    margin: 10px;
+}
+
+.mainBlock__button-disabled{
+    background-color: #cccccc;
+}
+
+.mainBlock__button:hover{
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);
+}
+.mainBlock__input:focus{
+    outline-color: rgb(252, 0, 0);
+}
