@@ -10,6 +10,7 @@ generateButton.onclick = function () {
     var inputmaxVal = Number(document.getElementById("inputmax").value);
     var randomNum = RandomNumber(inputminVal, inputmaxVal);
     var range = inputmaxVal - inputminVal;
+  console.log(randomNum)
   
     if (isValid(inputminVal, inputmaxVal)) {
       if (count === 1) {

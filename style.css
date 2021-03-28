@@ -1,33 +1,59 @@
-.mainBlock{
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    text-align: center;
-    
-    
-
+body {
+  background: rgb(210, 234, 248);
 }
-.mainBlock__wrapper{
-    padding: 10px;
-} 
-.mainBlock__input{
-    margin:5px 0 10px;
-}
-.mainBlock__input:nth-child(n+3){
-    border: 1px solid rgb(230, 101, 230);
-}
-.mainBlock__text{
-    padding: 5px;
-    margin: 10px;
+.mainBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 500px;
+  height: 600px;
+  background-color: rgb(223, 189, 214);
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 30px;
 }
 
-.mainBlock__button-disabled{
-    background-color: #cccccc;
+.mainBlock__nameGame {
+  text-transform: uppercase;
+  font-size:x-large;
+  font-weight: 800;
+}
+.mainBlock__text {
+  padding: 5px;
+  margin: 10px;
 }
 
-.mainBlock__button:hover{
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);
+.mainBlock__minVal,
+.mainBlock__maxVal {
+  margin: 5px 0 10px;
+  border: 1px solid rgb(224, 182, 224);
+  padding: 5px 15px;
+
 }
-.mainBlock__input:focus{
-    outline-color: rgb(252, 0, 0);
+.mainBlock__maxVal{
+    margin-bottom: 20px;
+}
+.mainBlock__minVal,
+.mainBlock__maxVal:focus {
+  outline-color: rgb(252, 0, 0);
+}
+
+.mainBlock__button{
+    padding: 5px 20px;
+    background-color: rgb(206, 154, 190);
+    border-radius: 15px;
+}
+.mainBlock__button-disabled {
+  background-color: #cccccc;
+  padding: 5px 20px;
+  border-radius: 15px;
+}
+
+.mainBlock__button:hover {
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.6);
+}
+
+input:nth-of-type(2n){
+    border:2px solid rgb(103, 209, 17);
 }
