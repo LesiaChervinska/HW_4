@@ -8,7 +8,7 @@ generateButton.onclick = function () {
     count++;
     var inputminVal = Number(document.getElementById("inputmin").value);
     var inputmaxVal = Number(document.getElementById("inputmax").value);
-    var randomNum = RandomNumber(inputminVal, inputmaxVal);
+    var randomNum = randomNumber(inputminVal, inputmaxVal);
     var range = inputmaxVal - inputminVal;
   console.log(randomNum)
   
@@ -39,7 +39,7 @@ function isValid(num1, num2) {
   return true;
 }
 
-function RandomNumber(min, max) {
+function randomNumber(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
   return Math.floor(Math.random() * (max - min + 1)) + min;
